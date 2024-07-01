@@ -1,0 +1,222 @@
+@media all and (max-width: 767px) {
+  #container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: aqua; */
+    z-index: 1;
+  }
+
+  .important__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 80px;
+  }
+
+  #about,
+  #skill,
+  #project,
+  #contact {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #hello {
+    width: 100%;
+    height: 100vh;
+  }
+
+  /* hello */
+  #text__typing {
+    font-size: 23px;
+  }
+
+  .mouse-icon {
+    left: 45%;
+    transform: translateX(-50%);
+  }
+
+  /* about */
+
+  .about__profile {
+    width: 100vw;
+  }
+
+  .about__title h1 {
+    font-size: 18px;
+  }
+
+  .about__title {
+    position: absolute;
+    top: 0;
+    left: 43%;
+    transform: translate(-50%, -50%);
+  }
+
+  .profile {
+    width: 200px;
+    height: 240px;
+    text-align: center;
+    /* border: 1px solid red; */
+    top: 4%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about__info {
+    width: 100%;
+    flex: 1;
+    height: 190px;
+    top: 4%;
+    left: 43%;
+  }
+
+  .about__highlight {
+    font-size: 12px;
+  }
+
+  .about__info p {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .click {
+    width: 100%;
+    position: absolute;
+    /* margin: 0 auto; */
+    bottom: -370px;
+    left: -43%;
+  }
+
+  .click a {
+    font-size: 12px;
+  }
+
+  .about__intro {
+    width: 100%;
+    height: 200px;
+  }
+
+  .about__infor {
+    position: absolute;
+    bottom: -110px;
+    /* border: 1px solid red; */
+  }
+
+  .about__infor p {
+    font-size: 12px;
+  }
+
+  .name,
+  .year,
+  .address,
+  .mail,
+  .call,
+  .git {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .name img,
+  .year img,
+  .address img,
+  .mail img,
+  .call img,
+  .git img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .name p {
+    font-size: 12px;
+  }
+
+  .about__Emphasize {
+    position: absolute;
+    bottom: -190px;
+    left: 1%;
+    /* display: none; */
+  }
+
+  .about__Emphasize p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .git a {
+    top: 160px;
+    left: 50px;
+  }
+
+  /* about end */
+
+  /* skill */
+
+  .skills__title {
+    position: absolute;
+    top: 10%;
+  }
+
+  .skills__title h1 {
+    font-size: 20px;
+  }
+
+  .project__title {
+    display: none;
+  }
+
+  .project__list {
+    width: 80vw;
+    height: 100%;
+    overflow: hidden;
+    max-height: max-content;
+    /* max-height: fit-content; */
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    justify-content: center;
+  }
+
+  .project__title h1 {
+    font-size: 1rem;
+  }
+
+  /* contact */
+  #contact {
+    width: 100%;
+    height: 100vh;
+  }
+  .contact__text {
+    position: absolute;
+    width: 400px;
+    left: 10%;
+  }
+  .contact__text h2 {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .contact__text__2 {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+  }
+  .contact__text__2 h1 {
+    font-size: 4rem;
+  }
+  .contact__title h2 {
+    font-size: 3rem;
+  }
+  .contact__mail {
+    left: 0;
+  }
+}

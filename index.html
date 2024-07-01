@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0 , minimum-scale=1, maximum=1 , user-scalable=no" />
+        <!-- CSS  -->
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/skill.css" />
+        <link rel="stylesheet" href="./css/projects.css" />
+        <link rel="stylesheet" href="./css/media.css" />
+        <!-- <link rel="stylesheet" href="./css/tablet.css" />
+        <link rel="stylesheet" href="./css/mobile.css" />
+        <link rel="stylesheet" href="./css/max480.css" /> -->
+        <link rel="stylesheet" href="./css/bg.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <!-- JS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- CDN -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/70/three.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/11/Stats.min.js"></script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- Font -->
+        <title>PortFolio</title>
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <nav>
+                    <ul class="important__menu">
+                        <li><button data-target="#hello">＜Home/＞</button></li>
+                        <li><button data-target="#about">＜About/＞</button></li>
+                        <li><button data-target="#skill">＜Skill/＞</button></li>
+                        <li><button data-target="#project">＜Project/＞</button></li>
+                        <li><button data-target="#contact">＜Contacts/＞</button></li>
+                    </ul>
+                </nav>
+            </header>
+            <!-- Section "hello" -->
+            <section id="hello">
+                <span id="text__typing"></span>
+                <div class="mouse-icon">
+                    <img src="./image/icon/mouse-cursor.png" alt="" />
+                </div>
+            </section>
+
+            <!-- Section "about" -->
+            <section id="about">
+                <div class="about__container">
+                    <div class="about__profile">
+                        <div class="about__title scroll_on type_bottom">
+                            <h1>ABOUT</h1>
+                        </div>
+                        <div class="about__info scroll_on type_left">
+                            <p>
+                                <span class="about__highlight">"Rome wasn't built in a day"</span>
+                                제가 가장 좋아하는 영어 격언 입니다.
+                                <br />
+                                로마가 하루만에 세워진 것이 아니라 여러 해 동안의 공사와 노력으로 완성되었던 것처럼 매일
+                                조금씩 성장하고 배워가며,
+                                <br />
+                                꾸준한 노력으로 기술과 지식, 경험을 바탕으로 하여, <br />
+                                계속 해서 나아갈 자신이 있습니다. 성실하게 쌓은 지식으로, 회사에 실질적인 도움이 되는
+                                <span class="about__highlight">"프론트엔드 개발자"</span>
+                                로 일하고 싶습니다.
+                            </p>
+                            <div class="click">
+                                <a href="./image/shinjaejun.pdf" target="_blank">이력서보기</a>
+                            </div>
+                        </div>
+                        <div class="profile scroll_on type_left">
+                            <img src="./image/about/profile.png" alt="" />
+                        </div>
+                        <div class="about__intro">
+                            <div class="about__infor scroll_on type_right">
+                                <div class="name">
+                                    <img src="./image/icon/user.png" alt="" />
+                                    <p>&emsp;&emsp;신재준</p>
+                                </div>
+                                <div class="year">
+                                    <img src="./image/icon/bry.png" alt="" />
+                                    <p>&emsp;&emsp;1996. 06. 17</p>
+                                </div>
+                                <div class="address">
+                                    <img src="./image/icon/address.png" alt="" />
+                                    <p>&emsp;&emsp;경기도 고양시 일산서구</p>
+                                </div>
+                                <div class="mail">
+                                    <img src="./image/icon/mail.png" alt="" />
+                                    <p>&emsp;&emsp;o3o_security@naver.com</p>
+                                </div>
+                                <div class="call">
+                                    <img src="./image/icon/call.png" alt="" />
+                                    <p>&emsp;&emsp;010 - 9968 - 1342</p>
+                                </div>
+                                <div class="git">
+                                    <img src="./image/icon/github.png" alt="" />
+                                    <p>
+                                        &emsp;&emsp;
+                                        <a target="_blank" href="https://github.com/jaejun0617/Portfolio"
+                                            >https://github.com/jaejun0617/Portfolio</a
+                                        >
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about__Emphasize scroll_on type_right">
+                                <p>
+                                    ✅ 배움을 즐기고 새로운 지식을 얻는 것을 좋아하는 열정파입니다. <br />
+                                    ✅ 스스로의 성장을 위한 의지와 집념이 강합니다. <br />
+                                    ✅ 끊임없는 탐구와 발전을 위해 노력하는 자세를 가지고 있습니다
+                                    <br />
+                                    ✅ 지식을 습득하고 새로운 기술을 습득하는 과정에서 즐거움을 느끼며 성장합니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubbles">
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section "skill" -->
+
+            <section id="skill">
+                <div class="skill__container">
+                    <div class="skills__title scroll_on type_left">
+                        <h1>My skills</h1>
+                    </div>
+
+                    <div id="skills-section" class="skills">
+                        <ul class="lines">
+                            <li class="line l--0">
+                                <span class="line__label title"> Skill level</span>
+                            </li>
+                            <li class="line l--25">
+                                <span class="line__label"> The basics </span>
+                            </li>
+                            <li class="line l--50">
+                                <span class="line__label"> Advanced </span>
+                            </li>
+                            <li class="line l--75">
+                                <span class="line__label"> Seasoned </span>
+                            </li>
+                            <li class="line l--100">
+                                <span class="line__label"> Expert </span>
+                            </li>
+                        </ul>
+
+                        <div class="charts">
+                            <div class="chart chart--dev">
+                                <span class="chart__title">Skills</span>
+                                <ul class="chart--horiz">
+                                    <li class="chart__bar" style="width: 70%">
+                                        <span class="chart__label"> HTML5 </span>
+                                    </li>
+                                    <li class="chart__bar" style="width: 70%">
+                                        <span class="chart__label"> CSS3 </span>
+                                    </li>
+                                    <li class="chart__bar" style="width: 50%">
+                                        <span class="chart__label"> JavaScript </span>
+                                    </li>
+                                    <li class="chart__bar" style="width: 50%">
+                                        <span class="chart__label"> jQuery </span>
+                                    </li>
+                                    <li class="chart__bar" style="width: 30%">
+                                        <span class="chart__label"> ReactJS </span>
+                                    </li>
+                                    <li class="chart__bar" style="width: 30%">
+                                        <span class="chart__label"> SCSS </span>
+                                    </li>
+                                    <li class="chart__bar" style="width: 60%">
+                                        <span class="chart__label"> Bootstrap </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="chart chart--prod">
+                                <span class="chart__title">Productivity</span>
+                                <ul class="chart--horiz">
+                                    <li class="chart__bar" style="width: 70%">
+                                        <span class="chart__label"> Git + Github </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="chart chart--design">
+                                <span class="chart__title">Design</span>
+                                <ul class="chart--horiz">
+                                    <li class="chart__bar" style="width: 50%">
+                                        <span class="chart__label"> Figma </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bubbles">
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                        <div class="bubble"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section "project" -->
+            <section id="project">
+                <div class="project__title scroll_on type_left">
+                    <h1>My Project list</h1>
+                </div>
+                <div class="project__list">
+                    <div class="audi scroll_on type_left">
+                        <div class="project__sub__title">Audi Renewal</div>
+                        <img src="./image/project/audi/audi.jpg" alt="audi img" />
+                        <a class="button1" href="#popup">View</a>
+                    </div>
+                    <div class="portfolio scroll_on type_left">
+                        <div class="project__sub__title">PortFolio</div>
+
+                        <img src="./image/project/portfolio/portfolio.png" alt="portfolio img" />
+                        <a class="button2" href="#popup1">View</a>
+                    </div>
+                    <div class="apple scroll_on type_left">
+                        <div class="project__sub__title">Apple Renewal</div>
+                        <img src="./image/project/apple/apple.JPG" alt="apple img" />
+                        <a class="button3" href="#popup2">View</a>
+                    </div>
+                </div>
+                <div class="popup" id="popup">
+                    <div class="popup-inner">
+                        <div class="popup__photo">
+                            <img src="./image/project/audi/main.png" alt="" />
+                        </div>
+                        <div class="popup__text">
+                            <h1>환영합니다, 새로운 아우디 월드로!</h1>
+                            <p>
+                                아우디 웹사이트를 새롭게 리뉴얼하였습니다. <br />
+                                시각적 업그레이드: 아우디의 미래지향적인 브랜드 정체성을 반영하기 위해 <br />
+                                웹사이트의 디자인을 새롭게 디자인하였습니다. <br />
+                                새로운 시각적 요소와 사용자 경험 디자인을 통해 사용자들이 아우디의 혁신적이고 세련된
+                                이미지를 경험할 수 있습니다. <br />
+                                개선된 내비게이션: 사용자들이 쉽게 정보를 찾을 수 있도록 내비게이션 구조를
+                                개선하였습니다. <br />
+                                간결하고 직관적인 메뉴 구조를 도입하여 사용자들이 원하는 정보에 더 빠르게 액세스할 수
+                                있도록 하였습니다.
+                            </p>
+                            <br />
+                            <div class="popup__line"></div>
+                        </div>
+                        <a class="popup__close" href="#project" scroll="{false}">X</a>
+
+                        <div class="site__view site__1">
+                            <div class="site__btn">
+                                <a href="https://jaejun0617.github.io/Audi/" target="_blank">사이트 바로가기</a>
+                            </div>
+                            <div class="git__btn">
+                                <a href="https://github.com/jaejun0617/Audi" target="_blank">깃허브 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup1">
+                    <div class="popup-inner">
+                        <div class="popup__photo">
+                            <img src="./image/project/portfolio/portfolio_main.png" alt="" />
+                        </div>
+                        <div class="popup__text">
+                            <h1>My PortFolio !</h1>
+                            <p>
+                                안녕하세요! 저는 <span class="bold">"신재준"</span>입니다.
+                                <br />
+                                웹 개발에 대한 열정을 가지고 있으며,<br />
+                                HTML, CSS, JavaScript, jQuery, SCSS, 그리고 Three.js 등의 기술을
+                                <br />
+                                활용하여 저만의 포트폴리오를 구현 해보았습니다. <br />
+                                창의적이고 효율적인 웹 페이지를 만드는 것을 즐깁니다. <br />
+                                HTML & CSS를 활용 한 구조적이고 반응형 웹 디자인 <br />
+                                JavaScript & jQuery를 통해 동적이고 인터랙티브한 사용자 인터페이스
+                                <br />
+                                SCSS 를 활용한 유지보수와 재사용성을 고려한 스타일 관리 <br />
+                                Three.js를 사용하여 3D 그래픽과 애니메이션을 <br />
+                                바탕으로 제작 되었습니다!
+                            </p>
+                        </div>
+                        <a class="popup__close" href="#project" scroll="{false}">X</a>
+                        <div class="site__view site__2">
+                            <div class="site__btn">
+                                <a href="https://jaejun0617.github.io/PortFolio/" target="_blank">사이트 바로가기</a>
+                            </div>
+                            <div class="git__btn">
+                                <a href="https://github.com/jaejun0617/Portfolio" target="_blank">깃허브 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup" id="popup2">
+                    <div class="popup-inner apple_inner">
+                        <div class="popup__photo apple_photo">
+                            <img src="./image/project/apple/apple.main.png" alt="" />
+                        </div>
+                        <div class="popup__text">
+                            <h1>더 새롭고, 더 직관적인 애플 홈페이지 리뉴얼</h1>
+                            <p>
+                                새롭게 리뉴얼 하게 된 애플 홈페이지를 소개합니다. <br />
+                                현대적이고 직관적인 디자인으로, 사용자 여러분이 더 쉽게 애플의 다양한 제품과 서비스를
+                                탐색하고 경험할 수 있도록 개선하였습니다. 더 빠르고 간편한 탐색: 새로운 네비게이션
+                                구조로 원하는 정보를 더욱 빠르게 찾을 수 있습니다. 모던하고 깨끗한 디자인: 애플의 브랜드
+                                이미지에 걸맞는 깔끔하고 세련된 디자인을 구현했습니다. 제품의 디테일을 더욱 생생하게
+                                전달합니다. 더 풍부한 제품 정보: 각 제품에 대한 상세한 설명과 리뷰, 그리고 유용한 팁을
+                                제공합니다.
+                            </p>
+                            <br />
+                            <div class="popup__line"></div>
+                        </div>
+                        <br />
+                        <a class="popup__close" href="#project" scroll="{false}">X</a>
+                        <div class="site__view site__3">
+                            <div class="site__btn">
+                                <a href="https://jaejun0617.github.io/Apple/" target="_blank">사이트 바로가기</a>
+                            </div>
+                            <div class="git__btn">
+                                <a href="https://github.com/jaejun0617/Apple" target="_blank">깃허브 바로가기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bubbles">
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                    <div class="bubble"></div>
+                </div>
+            </section>
+
+            <!-- Section "contact" -->
+            <section id="contact">
+                <div class="contact__bg"></div>
+                <div class="contact__text scroll_on type_left">
+                    <h2>
+                        프론트엔드 개발자로 성장하기 위해 낯선 기술에도 적극적으로 도전하고, 항상 사용자의 관점에서
+                        생각하며 사용하기 좋은 서비스를 만들고 싶습니다. 어떠한 말씀도 소중하게 담고 배우겠습니다.
+                        사소한 의견도 감사히 받겠습니다.
+                    </h2>
+                </div>
+                <div class="contact__text__2 scroll_on type_left">
+                    <h1>Thank You</h1>
+                </div>
+
+                <div class="contact__mail scroll_on type_left">
+                    <form id="contactForm">
+                        <div class="contact__title">
+                            <h2>Contact</h2>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" aria-placeholder="dddd">Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="성함을 입력해주세요." />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="메일 주소 입력해주세요." />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="10"
+                                required
+                                placeholder="내용을 입력해주세요."></textarea>
+                        </div>
+                        <div class="contact-btn">
+                            <button type="submit">
+                                <a href="mailto:o3o_security@naver.com">메일보내기</a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="social">
+                    <ul class="naver">
+                        <li>
+                            <img src="./image/icon/복사.png" alt="" />
+                            <a href="#" id="emailLink">o3o_security@naver.com</a>
+                        </li>
+                        <li class="kakao">
+                            <a href="https://open.kakao.com/o/sC80Idtg" target="_blank">
+                                <img src="./image/icon/kakao.png" alt="" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- END -->
+        </div>
+
+        <script src="./jquery-3.7.1.min.js"></script>
+        <script src="./js/button.js"></script>
+        <script src="./js/section.js"></script>
+        <script src="./js/bg.js"></script>
+        <script src="./js/text.js"></script>
+        <script src="./js/color.js"></script>
+        <script src="./js/contactbg.js"></script>
+        <script src="./js/topbtn.js"></script>
+
+        <script>
+            document.getElementById('emailLink').addEventListener('click', function (event) {
+                event.preventDefault();
+                const email = this.textContent;
+
+                const tempInput = document.createElement('textarea');
+                tempInput.value = email;
+                document.body.appendChild(tempInput);
+
+                tempInput.select();
+                document.execCommand('copy');
+
+                document.body.removeChild(tempInput);
+
+                alert('이메일이 복사 되었습니다 ! ');
+            });
+        </script>
+
+        <script>
+            var typed = new Typed('#text__typing', {
+                strings: ['현재에 머무르지 않고 꾸준히 노력하는', '프론트엔드 신입 개발자 신재준 입니다.'],
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true,
+            });
+        </script>
+        <script>
+            AOS.init();
+        </script>
+
+        <script>
+            history.scrollRestoration = 'manual';
+        </script>
+    </body>
+</html>

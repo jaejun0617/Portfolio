@@ -1,0 +1,345 @@
+#project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.project__title {
+  position: absolute;
+  top: 10%;
+}
+
+.project__title h1 {
+  font-size: 3rem;
+}
+
+.project__sub__title {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+}
+
+.audi,
+.portfolio,
+.apple {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  background-color: rgba(232, 219, 219, 0.8);
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.button1,
+.button2,
+.button3 {
+  text-decoration: none;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 1.5rem;
+  color: #000;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  text-align: center;
+  border: 1px solid #fff;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+.button1:hover,
+.button2:hover,
+.button3:hover {
+  background-color: rgb(133, 192, 234);
+  color: #fff;
+}
+
+.popup__line {
+  width: 100%;
+  height: 1px;
+  background-color: #686868;
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 6;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.64s ease-in-out;
+}
+.popup-inner {
+  position: relative;
+  bottom: -100vw;
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  max-height: 800px;
+  width: 60%;
+  height: 80%;
+  background-color: #fff;
+  transition: 0.64s ease-in-out;
+  z-index: 3;
+}
+.popup__photo {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.popup__photo img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.popup__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  height: 100%;
+  padding: 4rem;
+  text-align: left;
+}
+.popup__text h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: #0a0a0a;
+}
+.popup__text p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #686868;
+  line-height: 2;
+}
+.popup:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup:target .popup-inner {
+  bottom: 0;
+  right: 0;
+  transform: rotate(0);
+}
+.popup__close {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  border-radius: 100%;
+  background-color: #0a0a0a;
+  z-index: 4;
+  color: #fff;
+  line-height: 3rem;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project__list {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  z-index: 3;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 90deg;
+  inherits: true;
+}
+
+@property --gradX {
+  syntax: "<percentage>";
+  initial-value: 50%;
+  inherits: true;
+}
+
+@property --gradY {
+  syntax: "<percentage>";
+  initial-value: 0%;
+  inherits: true;
+}
+
+.site__btn {
+  position: absolute;
+  bottom: 15%;
+  left: 36%;
+  border: 1px solid #000;
+  transform: translate(-50%, -50%);
+  /* border: 1px solid red; */
+  transition: 0.5s;
+}
+
+.site__btn a {
+  display: inline-block;
+  padding: 0.75rem;
+  /* background-color: #000; */
+  transition: 0.5s;
+}
+
+.site__btn a:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.git__btn {
+  position: absolute;
+  bottom: 15%;
+  left: 49%;
+  border: 1px solid #000;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.git__btn a {
+  display: inline-block;
+  padding: 0.75rem;
+  transition: 0.5s;
+}
+
+.git__btn a:hover {
+  background-color: #000;
+  color: #fff;
+  transition: 0.5s;
+}
+
+:root {
+  --d: 3000ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+.audi img,
+.portfolio img,
+.apple img {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.btn__1 {
+  position: absolute;
+  top: 50%;
+}
+
+.audi:nth-child(2) {
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    100;
+  animation: borderRotateReverse var(--d) linear infinite;
+}
+
+@keyframes borderRotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+@keyframes borderRotateReverse {
+  0% {
+    --angle: 360deg;
+  }
+  100% {
+    --angle: 0deg;
+  }
+}
+
+@keyframes borderRadial {
+  0% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .popup__photo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .popup__photo img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .popup__text {
+    display: none;
+  }
+  .site__btn a {
+    display: none;
+  }
+  .git__btn a {
+    display: none;
+  }
+}

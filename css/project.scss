@@ -1,0 +1,218 @@
+#project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+
+.button1 {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  color: #000;
+  padding: 1rem 2rem;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.64s ease-in-out;
+  &-inner {
+    position: relative;
+    bottom: -100vw;
+    right: -100vh;
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    max-height: 800px;
+    width: 60%;
+    height: 80%;
+    background-color: #fff;
+    transform: rotate(32deg);
+    transition: 0.64s ease-in-out;
+    &__photo {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      width: 25%;
+      height: 100%;
+      overflow: hidden;
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+    &__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 70%;
+      height: 100%;
+      padding: 4rem;
+      text-align: center;
+      h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        color: #0a0a0a;
+      }
+      p {
+        font-size: 0.875rem;
+        color: #686868;
+        line-height: 2;
+      }
+    }
+  }
+  &:target {
+    visibility: visible;
+    opacity: 1;
+    & .popup-inner {
+      bottom: 0;
+      right: 0;
+      transform: rotate(0);
+    }
+  }
+  &__close {
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 0.875rem;
+    font-weight: 300;
+    border-radius: 100%;
+    background-color: #0a0a0a;
+    z-index: 4;
+    color: #fff;
+    line-height: 3rem;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+.project__list {
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.site a {
+  text-decoration: none;
+}
+
+.click {
+  display: flex;
+}
+
+// Custom properties
+:root {
+  --d: 3000ms;
+  --angle: 90deg;
+  --gradX: 100%;
+  --gradY: 50%;
+  --c1: rgba(168, 239, 255, 1);
+  --c2: rgba(168, 239, 255, 0.1);
+}
+
+.audi img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.audi {
+  width: 400px;
+  height: 250px;
+  position: relative;
+  border: 0.5rem solid;
+  border-image: conic-gradient(
+      from var(--angle),
+      var(--c2),
+      var(--c1) 0.1turn,
+      var(--c1) 0.15turn,
+      var(--c2) 0.25turn
+    )
+    100;
+  animation: borderRotate var(--d) linear infinite;
+  &:nth-child(2) {
+    border-image: conic-gradient(
+        from var(--angle),
+        var(--c2),
+        var(--c1) 0.1turn,
+        var(--c1) 0.15turn,
+        var(--c2) 0.25turn
+      )
+      100;
+    animation: borderRotateReverse var(--d) linear infinite;
+  }
+}
+
+@keyframes borderRotate {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+@keyframes borderRotateReverse {
+  0% {
+    --angle: 360deg;
+  }
+  100% {
+    --angle: 0deg;
+  }
+}
+
+@keyframes borderRadial {
+  0% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+  20% {
+    --gradX: 100%;
+    --gradY: 50%;
+  }
+  40% {
+    --gradX: 100%;
+    --gradY: 100%;
+  }
+  60% {
+    --gradX: 50%;
+    --gradY: 100%;
+  }
+  80% {
+    --gradX: 0%;
+    --gradY: 50%;
+  }
+  100% {
+    --gradX: 50%;
+    --gradY: 0%;
+  }
+}

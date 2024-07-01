@@ -1,0 +1,257 @@
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  /* hello */
+
+  #hello {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+
+  #text__typing {
+    font-size: 2.5rem;
+  }
+
+  .mouse-icon {
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* about */
+
+  #about {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .about__container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .about__profile {
+    width: 100%;
+    position: relative;
+  }
+
+  .about__title {
+    position: absolute;
+    top: 5%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid red; */
+  }
+  .about__title h1 {
+    font-size: 3rem;
+  }
+  .profile {
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    /* border: 1px solid red; */
+    top: 13%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+  }
+
+  .about__info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    /* border: 1px solid red; */
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+  }
+
+  .about__info p {
+    width: 50%;
+    font-size: 18px;
+  }
+
+  .about__highlight {
+    font-size: 18px;
+  }
+
+  .click {
+    width: 20%;
+    position: absolute;
+    bottom: -280px;
+    left: 38%;
+  }
+
+  .click a {
+    font-size: 18px;
+  }
+
+  .about__intro {
+    width: 100%;
+    height: 200px;
+  }
+
+  .about__infor {
+    position: absolute;
+    top: -35%;
+    right: 20%;
+    /* border: 1px solid red; */
+  }
+
+  .about__infor p {
+    font-size: 18px;
+  }
+
+  .name,
+  .year,
+  .address,
+  .mail,
+  .call,
+  .git {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .name img,
+  .year img,
+  .address img,
+  .mail img,
+  .call img,
+  .git img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .name p,
+  .year p,
+  .address p,
+  .mail p,
+  .call p,
+  .git p {
+    font-size: 18px;
+  }
+
+  .about__Emphasize {
+    position: absolute;
+    left: 25%;
+    bottom: -550px;
+  }
+
+  .about__Emphasize p {
+    font-size: 18px;
+    line-height: 2;
+  }
+
+  .git a {
+    top: 90%;
+    left: 34%;
+  }
+
+  /* about end */
+
+  /* skill */
+
+  .skills__title {
+    position: absolute;
+    top: 10%;
+  }
+
+  .skills__title h1 {
+    font-size: 3rem;
+  }
+
+  /* project */
+  .project__title {
+  }
+
+  .project__list {
+    width: 80vw;
+    height: 100vh;
+    overflow: hidden;
+    max-height: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    justify-content: center;
+    margin-top: 20%;
+  }
+
+  .project__title h1 {
+    font-size: 1rem;
+  }
+
+  .popup__photo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .popup__photo img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .site__btn {
+    position: absolute;
+    bottom: 4%;
+    left: 60%;
+    border: 1px solid #000;
+    transform: translate(-50%, -50%);
+  }
+
+  .site__btn a {
+    display: inline-block;
+    padding: 0.3rem;
+  }
+
+  .git__btn {
+    position: absolute;
+    bottom: 4%;
+    left: 80%;
+    border: 1px solid #000;
+    transform: translate(-50%, -50%);
+  }
+
+  .git__btn a {
+    display: inline-block;
+    padding: 0.3rem;
+  }
+
+  /* contact */
+  #contact {
+    width: 100%;
+    height: 100vh;
+  }
+  .contact__text {
+    position: absolute;
+    max-width: 480px;
+    width: 400px;
+    left: 30%;
+    /* border: 1px solid red; */
+  }
+  .contact__text h2 {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .contact__text__2 {
+    position: absolute;
+    top: 15%;
+    left: 35%;
+  }
+  .contact__text__2 h1 {
+    font-size: 4rem;
+  }
+  .contact__title h2 {
+    font-size: 3rem;
+  }
+  .contact__mail {
+    margin-top: 20px;
+    left: 25%;
+  }
+}
